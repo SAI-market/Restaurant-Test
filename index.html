@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Fogón de Campo — Parrilla Tradicional</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-flame">🔥</span>
+        <span>El Fogón</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="/images/hero.jpg" alt="Parrilla El Fogón de Campo" class="hero-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-embers" id="embers"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" id="statusBadge">
+        <span class="badge-dot"></span>
+        <span class="badge-text"></span>
+      </div>
+      <p class="hero-pretitle">Parrilla de Campo</p>
+      <h1 class="hero-title">El Fogón<br /><em>de Campo</em></h1>
+      <p class="hero-subtitle">Donde el fuego lento convierte cada corte en una historia. Tradición, campo y sabor en cada brasero.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5491100000000?text=Hola,%20quiero%20hacer%20una%20reserva" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Reservar Mesa
+        </a>
+        <a href="#ubicacion" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cómo Llegar
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Explorar</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SOBRE NOSOTROS ═══════════════════ -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="/images/parrilla.jpg" alt="Nuestra parrilla" class="about-img" />
+          <div class="about-badge-years">
+            <span class="years-number">25</span>
+            <span class="years-text">años de<br/>tradición</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">Nuestra Historia</p>
+          <h2 class="section-title">Tres generaciones.<br /><em>Un solo fuego.</em></h2>
+          <p class="about-body">El Fogón de Campo nació hace más de dos décadas cuando el abuelo Héctor decidió abrir las puertas de su estancia familiar para compartir lo que siempre fue el alma de los domingos: la parrilla lenta, el olor a leña y la mesa larga.</p>
+          <p class="about-body">Hoy, sus nietos llevan adelante esa misma llama. Cada corte es seleccionado a mano. Cada brasero, encendido con la misma leña de quebracho que usaba el abuelo. Porque en El Fogón, la tradición no es nostalgia — es ingrediente.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">🌿</div>
+              <div>
+                <strong>Ingredientes locales</strong>
+                <span>Del campo a la mesa</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🪵</div>
+              <div>
+                <strong>Leña de quebracho</strong>
+                <span>Sabor auténtico</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">👨‍👩‍👧‍👦</div>
+              <div>
+                <strong>Empresa familiar</strong>
+                <span>Calidez en cada detalle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MENÚ ═══════════════════ -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <p class="section-label center">Nuestra Carta</p>
+      <h2 class="section-title center">El Menú del<br /><em>Fogón</em></h2>
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="parrilla">🥩 Parrilla</button>
+        <button class="tab-btn" data-category="pastas">🍝 Pastas</button>
+        <button class="tab-btn" data-category="bebidas">🍷 Bebidas</button>
+        <button class="tab-btn" data-category="postres">🍮 Postres</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- Items inserted by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GALERÍA ═══════════════════ -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <p class="section-label center">Momentos</p>
+      <h2 class="section-title center">La Experiencia<br /><em>El Fogón</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g-tall">
+        <img src="/images/galeria1.jpg" alt="Galería 1" />
+        <div class="gallery-hover"><span>El fuego sagrado</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="/images/galeria2.jpg" alt="Galería 2" />
+        <div class="gallery-hover"><span>Cortes a la parrilla</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="/images/galeria3.jpg" alt="Galería 3" />
+        <div class="gallery-hover"><span>La mesa familiar</span></div>
+      </div>
+      <div class="gallery-item g-wide">
+        <img src="/images/galeria4.jpg" alt="Galería 4" />
+        <div class="gallery-hover"><span>Campo y horizonte</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="/images/galeria5.jpg" alt="Galería 5" />
+        <div class="gallery-hover"><span>Empanadas de la casa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ RESERVAS ═══════════════════ -->
+  <section class="reservas" id="reservas">
+    <div class="reservas-bg">
+      <img src="/images/hero.jpg" alt="Fondo reservas" />
+      <div class="reservas-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="reservas-card">
+        <div class="reservas-text">
+          <p class="section-label">Reservas</p>
+          <h2 class="section-title">Asegurá tu<br /><em>lugar al fuego</em></h2>
+          <p>Completá el formulario y te contactamos por WhatsApp para confirmar tu reserva en minutos.</p>
+          <ul class="reservas-info">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Sáb y Dom: 12:00 — 16:00 hs / 20:00 — 00:00 hs
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              Grupos hasta 40 personas
+            </li>
+          </ul>
+        </div>
+        <form class="reservas-form" id="reservaForm" onsubmit="return false;">
+          <div class="form-group">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" placeholder="Ej: María González" autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="personas">Personas</label>
+              <select id="personas">
+                <option value="">— Cantidad —</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+                <option>7</option><option>8</option>
+                <option value="más de 8">+8</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="hora">Horario preferido</label>
+            <select id="hora">
+              <option value="">— Turno —</option>
+              <option value="12:00">12:00 hs (mediodía)</option>
+              <option value="13:00">13:00 hs</option>
+              <option value="14:00">14:00 hs</option>
+              <option value="20:00">20:00 hs (noche)</option>
+              <option value="21:00">21:00 hs</option>
+              <option value="21:30">21:30 hs</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary btn-full" id="reservarBtn" onclick="enviarReserva()">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Confirmar por WhatsApp
+          </button>
+          <p class="form-disclaimer">Te vamos a responder en menos de 1 hora durante el horario de apertura.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ RESEÑAS ═══════════════════ -->
+  <section class="resenas" id="resenas">
+    <div class="container">
+      <p class="section-label center">Opiniones</p>
+      <h2 class="section-title center">Lo que dicen<br /><em>nuestros comensales</em></h2>
+      <div class="resenas-grid">
+        <div class="resena-card">
+          <div class="resena-stars">★★★★★</div>
+          <p class="resena-text">"El asado más tierno que probé en años. Se nota que usan leña de verdad, el sabor es completamente diferente. La atención fue impecable, muy familiar y cálida. Ya reservamos para el próximo finde."</p>
+          <div class="resena-author">
+            <div class="author-avatar">LC</div>
+            <div>
+              <strong>Laura C.</strong>
+              <span>Buenos Aires</span>
+            </div>
+          </div>
+        </div>
+        <div class="resena-card featured">
+          <div class="resena-stars">★★★★★</div>
+          <p class="resena-text">"Vinimos para el cumpleaños de mi viejo y fue una experiencia increíble. El entorno es hermoso, te sentís en el campo de verdad. Las empanadas de entrada son un viaje. 100% recomendado para grupos grandes."</p>
+          <div class="resena-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <strong>Martín R.</strong>
+              <span>La Plata</span>
+            </div>
+          </div>
+          <div class="resena-badge">⭐ Favorito</div>
+        </div>
+        <div class="resena-card">
+          <div class="resena-stars">★★★★★</div>
+          <p class="resena-text">"Encontré este lugar por una recomendación y desde la primera vez que fui no puedo parar de volver. El vacío a la leña es de otro nivel. Los postres caseros son el cierre perfecto. Lugar mágico."</p>
+          <div class="resena-author">
+            <div class="author-avatar">VP</div>
+            <div>
+              <strong>Valentina P.</strong>
+              <span>Luján</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ UBICACIÓN ═══════════════════ -->
+  <section class="ubicacion" id="ubicacion">
+    <div class="container">
+      <p class="section-label center">Encontranos</p>
+      <h2 class="section-title center">A solo 15 minutos<br /><em>del centro</em></h2>
+      <div class="ubicacion-grid">
+        <div class="ubicacion-info">
+          <div class="info-block">
+            <div class="info-icon">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <p>Ruta Provincial 7, km 48 — Luján, Buenos Aires</p>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-icon">🕐</div>
+            <div>
+              <strong>Horarios</strong>
+              <p>Sábados y domingos: 12:00 — 16:00 y 20:00 — 00:00 hs</p>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-icon">🚗</div>
+            <div>
+              <strong>Cómo llegar</strong>
+              <p>Desde la rotonda de acceso a Luján, tomá la Ruta 7 hacia el oeste. Al km 48 vas a ver el cartel del Fogón a mano derecha, antes del puente de madera.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5491100000000?text=Hola,%20necesito%20indicaciones%20para%20llegar%20al%20restaurante" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pedir indicaciones
+          </a>
+        </div>
+        <div class="ubicacion-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.75027038455!2d-59.13178!3d-34.5692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc8e2da9e0fb5d%3A0x5e96e0b7b2f4c16e!2sLuj%C3%A1n%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1699000000000"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación El Fogón de Campo">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACTO ═══════════════════ -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <p class="section-label center">¿Consultas?</p>
+      <h2 class="section-title center">Escribinos sin<br /><em>compromiso</em></h2>
+      <p class="contacto-sub">¿Tenés alguna duda sobre el menú, los precios o los horarios? Escribinos directamente por WhatsApp y te respondemos al toque.</p>
+      <div class="contacto-cards">
+        <a href="https://wa.me/5491100000000" class="contacto-card wa-card" target="_blank" rel="noopener">
+          <div class="contacto-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <strong>WhatsApp</strong>
+          <span>+54 9 11 0000-0000</span>
+          <em>Respuesta rápida</em>
+        </a>
+        <a href="https://instagram.com/elfogondecampo" class="contacto-card ig-card" target="_blank" rel="noopener">
+          <div class="contacto-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <strong>Instagram</strong>
+          <span>@elfogondecampo</span>
+          <em>Fotos y novedades</em>
+        </a>
+        <div class="contacto-card phone-card">
+          <div class="contacto-icon">📞</div>
+          <strong>Teléfono</strong>
+          <span>+54 9 11 0000-0000</span>
+          <em>Sáb y Dom 10 a 22 hs</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🔥 El Fogón de Campo</div>
+          <p>Parrilla tradicional familiar desde 1999. Fuego, campo y sabor auténtico a solo minutos de la ciudad.</p>
+        </div>
+        <div class="footer-links">
+          <strong>Secciones</strong>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <strong>Contacto</strong>
+          <p>Ruta Provincial 7, km 48<br />Luján, Buenos Aires</p>
+          <p>Sábados y domingos<br />12:00 — 16:00 / 20:00 — 00:00</p>
+          <a href="https://wa.me/5492323521229" target="_blank" rel="noopener" class="footer-wa">💬 Escribinos</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 El Fogón de Campo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ FLOATING WA ═══════════════════ -->
+  <a href="https://wa.me/5492323521229?text=Hola,%20quiero%20hacer%20una%20consulta" class="float-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="float-wa-tooltip">¡Reservá ahora!</span>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html> 
