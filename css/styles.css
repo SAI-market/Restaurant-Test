@@ -392,80 +392,23 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   position: absolute; top: 0; left: 0; right: 0; height: 4px;
   background: linear-gradient(90deg, var(--ember), var(--gold), var(--ember));
 }
-.menu-tabs {
-  display: flex; flex-wrap: wrap; justify-content: center;
-  gap: .75rem;
-  margin-bottom: 3rem;
-}
-.tab-btn {
-  font-family: var(--ff-ui);
-  font-size: .82rem;
-  font-weight: 600;
-  letter-spacing: .08em;
-  padding: .6rem 1.4rem;
-  border-radius: 100px;
-  border: 2px solid var(--parchment);
-  color: var(--brown);
-  background: var(--white);
-  transition: all .2s;
-}
-.tab-btn:hover { border-color: var(--ember); color: var(--ember); }
-.tab-btn.active {
-  background: var(--ember);
-  border-color: var(--ember);
-  color: var(--white);
-  box-shadow: 0 4px 12px rgba(196,80,26,.3);
-}
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-.menu-card {
-  background: var(--white);
+.menu-image-wrap {
+  max-width: 860px;
+  margin: 0 auto 2.5rem;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform .3s, box-shadow .3s;
-  border: 1px solid rgba(139,104,53,.1);
-}
-.menu-card:hover {
-  transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
+  border: 3px solid var(--cream-dark);
+  background: linear-gradient(135deg, var(--brown-light), var(--brown-dark));
 }
-.menu-card-img {
-  aspect-ratio: 4/3;
-  background: linear-gradient(135deg, var(--brown-light) 0%, var(--brown-dark) 100%);
-  position: relative;
-  overflow: hidden;
+.menu-img {
+  width: 100%; height: auto;
+  display: block;
+  object-fit: contain;
 }
-.menu-card-img img {
-  transition: transform .5s ease;
-}
-.menu-card:hover .menu-card-img img { transform: scale(1.07); }
-.menu-card-price {
-  position: absolute; top: .75rem; right: .75rem;
-  background: var(--ember);
-  color: var(--white);
-  font-family: var(--ff-ui);
-  font-size: .8rem;
-  font-weight: 700;
-  padding: .3rem .75rem;
-  border-radius: 100px;
-  letter-spacing: .03em;
-}
-.menu-card-body { padding: 1.25rem; }
-.menu-card-name {
-  font-family: var(--ff-display);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--brown-dark);
-  margin-bottom: .4rem;
-}
-.menu-card-desc {
-  font-size: .83rem;
-  color: var(--brown-light);
-  line-height: 1.55;
+.menu-pdf-action {
+  display: flex;
+  justify-content: center;
 }
 
 /* ══════════════════════════════════════════

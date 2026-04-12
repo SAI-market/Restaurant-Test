@@ -5,7 +5,7 @@
 'use strict';
 
 /* ─── WHATSAPP NUMBER ─── */
-const WA_NUMBER = '5491100000000';
+const WA_NUMBER = '5492323521229';
 
 /* ══════════════════════════════════════════
    1. OPEN/CLOSED STATUS
@@ -91,134 +91,6 @@ const WA_NUMBER = '5491100000000';
     `;
     container.appendChild(e);
   }
-})();
-
-/* ══════════════════════════════════════════
-   5. MENU DATA & RENDERING
-══════════════════════════════════════════ */
-const MENU_DATA = {
-  parrilla: [
-    {
-      name: 'Asado de Tira',
-      desc: 'Corte clásico a la leña, tierno por dentro y crocante por fuera. Con chimichurri de la casa.',
-      price: '$4.200',
-      img: '/images/plato1.jpg',
-    },
-    {
-      name: 'Vacío al Rescoldo',
-      desc: 'Cocción lenta sobre las brasas, marinado con ajo, perejil y laurel. El favorito del fogón.',
-      price: '$5.800',
-      img: '/images/plato2.jpg',
-    },
-    {
-      name: 'Entraña a la Llama',
-      desc: 'Corte tierno y jugoso, sellado rápido a llama viva. Acompañado de papas rústicas.',
-      price: '$4.900',
-      img: '/images/plato3.jpg',
-    },
-    {
-      name: 'Parrillada Completa',
-      desc: 'Selección de cortes para 2 personas: tira, vacío, chorizos, morcilla y achuras.',
-      price: '$9.500',
-      img: '/images/plato4.jpg',
-    },
-  ],
-  pastas: [
-    {
-      name: 'Ñoquis de la Nona',
-      desc: 'Ñoquis caseros de papa con salsa bolognesa de carne de campo. Masa artesanal.',
-      price: '$3.200',
-      img: '/images/pasta1.jpg',
-    },
-    {
-      name: 'Tallarines con Estofado',
-      desc: 'Pasta fresca al huevo con estofado de vacuno cocinado 5 horas a fuego lento.',
-      price: '$3.800',
-      img: '/images/pasta2.jpg',
-    },
-    {
-      name: 'Sorrentinos de Ricota',
-      desc: 'Rellenos de ricota y espinaca, con salsa de crema y hongos de temporada.',
-      price: '$3.500',
-      img: '/images/pasta3.jpg',
-    },
-  ],
-  bebidas: [
-    {
-      name: 'Malbec de la Bodega',
-      desc: 'Vino tinto seleccionado, botella compartida. Maridaje perfecto con la parrilla.',
-      price: '$3.000',
-      img: '/images/bebida1.jpg',
-    },
-    {
-      name: 'Limonada de Campo',
-      desc: 'Limonada artesanal con hierbas frescas del jardín. Refrescante y natural.',
-      price: '$850',
-      img: '/images/bebida2.jpg',
-    },
-    {
-      name: 'Clericó de Temporada',
-      desc: 'Vino blanco con frutas frescas de temporada. Perfecta para el calor del campo.',
-      price: '$1.800',
-      img: '/images/bebida3.jpg',
-    },
-  ],
-  postres: [
-    {
-      name: 'Flan Casero con Dulce',
-      desc: 'Flan de la abuela con dulce de leche y crema chantilly. Receta sin cambios desde 1999.',
-      price: '$1.200',
-      img: '/images/postre1.jpg',
-    },
-    {
-      name: 'Arroz con Leche',
-      desc: 'Cremoso, con canela y cáscara de naranja. Servido templado o frío.',
-      price: '$980',
-      img: '/images/postre2.jpg',
-    },
-    {
-      name: 'Torta de Ricota',
-      desc: 'Tarta artesanal de ricota con base de masa sablé. Infaltable en el menú del domingo.',
-      price: '$1.400',
-      img: '/images/postre3.jpg',
-    },
-  ],
-};
-
-function renderMenu(category) {
-  const grid  = document.getElementById('menuGrid');
-  const items = MENU_DATA[category] || [];
-  if (!grid) return;
-
-  grid.innerHTML = '';
-  items.forEach((item, i) => {
-    const card = document.createElement('div');
-    card.className = 'menu-card';
-    card.style.animationDelay = `${i * .07}s`;
-    card.innerHTML = `
-      <div class="menu-card-img">
-        <img src="${item.img}" alt="${item.name}" loading="lazy" />
-        <span class="menu-card-price">${item.price}</span>
-      </div>
-      <div class="menu-card-body">
-        <div class="menu-card-name">${item.name}</div>
-        <div class="menu-card-desc">${item.desc}</div>
-      </div>
-    `;
-    grid.appendChild(card);
-  });
-}
-
-(function initMenu() {
-  const tabs = document.querySelectorAll('.tab-btn');
-  tabs.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      btn.classList.add('active');
-      renderMenu(btn.dataset.category);
-    });
-  });
-  renderMenu('parrilla'); // default
 })();
 
 /* ══════════════════════════════════════════
